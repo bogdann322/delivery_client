@@ -1,0 +1,36 @@
+.form {
+    border: 1px solid grey;
+    padding: 30px 100px  50px 30px;
+    border-radius: 10px;
+    
+}
+.input {
+    width: 400px;
+    padding: 10px 25px;
+    margin: 20px 0;
+    border-radius:10px;
+    border:1px solid grey
+}
+
+.form__footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 120px;
+    margin-top: 20px;
+}
+.form__footer input {
+    padding: 15px 35px;
+    margin-left: 20px;
+    border:1px solid rgb(83, 79, 79);
+    border-radius: 15px;
+    background-color: rgb(172, 173, 168);
+}
+
+.form__footer input:hover{
+    cursor: pointer;
+}
+.form__footer span {
+    font-size: 18px;
+    margin-right: 20px;
+}

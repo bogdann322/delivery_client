@@ -1,0 +1,21 @@
+.shoplist__wrapp{
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+    height: 600px;
+}
+.shopList_item{
+    margin: 15px 40px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    height: 60px;
+    width: 240px;
+}
+.shopList_item:hover{
+    background-color: rgb(154, 169, 169);
+    cursor: pointer;
+}
+.shopList_item_selected {
+    background-color: rgb(154, 169, 169);
+}

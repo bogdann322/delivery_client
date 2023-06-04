@@ -1,0 +1,16 @@
+.shops__wrapp{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+.products_list{
+    overflow: scroll;
+    height: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid grey;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 70%;
+}

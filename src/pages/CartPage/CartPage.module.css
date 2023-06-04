@@ -1,0 +1,17 @@
+.cartpage_wrapp{
+    margin: 40px;
+}
+.cartPage__main{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cartPage__cartItems{
+    overflow: scroll;
+    height: 420px;
+    border: 1px solid grey;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+.cartPage__img{
+    max-width: 200px;
+}

@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Header from './Components/Header/Header'
+import CartPage from './pages/CartPage/CartPage'
+import ShopPage from './pages/ShopPage/ShopPage'
+import NotFound from './pages/NotFound'
+
+import { OrderContext } from './context/Context'
+import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import { ShopContext } from './context/ShopContext'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [orderList, setOrderList] = useState([])
+	const [selectedShop, setSelectedShop] = useState('mcdonalds')
+
+	return (
+		<OrderContext.Provider value={{ orderList, setOrderList }}>
+			<ShopContext.Provider value={{ selectedShop, setSelectedShop }}>
+				<div className='App'>
+					<Header />
+					<Routes>
+						<Route path='/' element={<ShopPage />} />
+						<Route path='/cart' element={<CartPage />} />
+						<Route path='*' element={<NotFound />} />
+					</Routes>
+				</div>
+			</ShopContext.Provider>
+		</OrderContext.Provider>
+	)
 }
 
-export default App;
+export default App

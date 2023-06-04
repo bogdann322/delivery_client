@@ -1,0 +1,30 @@
+.product__wrapp{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px 35px;
+    margin: 15px 25px;
+}
+
+.product_image{
+    max-width: 200px;
+    max-height: 150px;
+}
+
+.product__desc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    margin-top: 10px;
+    height: 35px;
+    padding: 10px 15px;
+    border-radius:15px;
+    border: 1px solid grey;
+    float: right;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: darkgray;
+}

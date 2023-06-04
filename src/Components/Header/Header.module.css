@@ -1,0 +1,39 @@
+.navbar{
+    display: flex; 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar__links{
+    display: flex; 
+}
+
+.navbar__item{
+    border-left: 3px solid black;
+    margin-left: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.navbar__icon{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.navbar__icon > a {
+    text-decoration: none;
+}
+
+.navbar__icon > span{
+    margin-left: 10px;
+    font-size: 20px;
+    
+}
