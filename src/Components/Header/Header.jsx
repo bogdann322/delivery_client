@@ -14,14 +14,14 @@ const Header = () => {
 		<div className={styles.navbar}>
 			<div className={styles.navbar__links}>
 				<div>
-					<Link to='/' className={styles.link}>Shop</Link>
+					<Link to='/delivery_client/' className={styles.link}>Shop</Link>
 				</div>
 				<div className={styles.navbar__item}>
-					<Link to='/cart' className={styles.link}>Shopping Cart</Link>
+					<Link to='/delivery_client/cart' className={styles.link}>Shopping Cart</Link>
 				</div>
 			</div>
 
-			<Link to='/cart' className={styles.link}>
+			<Link to='/delivery_client/cart' className={styles.link}>
 				<div className={styles.navbar__icon} >
 					<img  src={shoppingCart} alt="cart" /> 
 					<span>{orderCount}</span>

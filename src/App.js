@@ -19,8 +19,8 @@ function App() {
 				<div className='App'>
 					<Header />
 					<Routes>
-						<Route path='/' element={<ShopPage />} />
-						<Route path='/cart' element={<CartPage />} />
+						<Route path='/delivery_client/' element={<ShopPage />} />
+						<Route path='/delivery_client/cart' element={<CartPage />} />
 						<Route path='*' element={<NotFound />} />
 					</Routes>
 				</div>
