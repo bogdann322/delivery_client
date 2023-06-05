@@ -14,7 +14,7 @@ const ShopPage = () => {
 	const { selectedShop, setSelectedShop} = useContext(ShopContext)
 
 	useEffect(() => {
-    axios.get(`http://localhost:8000/food/?shop=${selectedShop}`)
+    axios.get(`https://powerful-carnelian-monday.glitch.me/food/?shop=${selectedShop}`)
       .then(res => {
         setProduct(res.data);
       })

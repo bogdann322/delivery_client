@@ -20,7 +20,7 @@ const UserForm = ({  totalPrice, orderList, setOrderList }) => {
 			...userInfo,
 			order: orderList
 		}
-		axios.post('http://localhost:8000/order', finalOrder)
+		axios.post('https://powerful-carnelian-monday.glitch.me/order', finalOrder)
 		setOrderList([])
 		setUserInfo({ name: '', email: '', phone: '', address: ''})
 	}

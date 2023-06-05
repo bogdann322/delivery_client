@@ -6,7 +6,7 @@ const EmptyCart = () => {
   return (
     <div className={style.emptyCart}>
       <h3>Your cart is empty 😕 </h3>
-      <img src="https://www.vhv.rs/dpng/d/521-5212497_empty-cart-hd-png-download.png" alt="empty" />
+      <img src="https://www.seekpng.com/png/detail/117-1170538_404-your-cart-is-empty.png" alt="empty" />
     </div>
   )
 }
